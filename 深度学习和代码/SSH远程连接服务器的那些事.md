@@ -1,5 +1,7 @@
 # SSH远程连接服务器搭建Python环境全套解析
 
+![OQq8RW](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202102/OQq8RW.png)
+
 ##  ssh
 
 SSH（Secure Shell）是一套协议标准，可以用来实现两台机器之间的安全登录以及安全的数据传送，其保证数据安全的原理是**非对称加密**。

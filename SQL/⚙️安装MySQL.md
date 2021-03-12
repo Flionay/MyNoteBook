@@ -1,0 +1,44 @@
+# ⚙️安装MySQL
+
+---
+
+## SQL版本
+
+
+**MySQL是目前应用最广泛的开源关系数据库。**
+MySQL最早是由瑞典的MySQL AB公司开发，该公司在2008年被SUN公司收购，紧接着，SUN公司在2009年被Oracle公司收购，所以MySQL最终就变成了Oracle旗下的产品。
+和其他关系数据库有所不同的是，MySQL本身实际上只是一个SQL接口，它的内部还包含了多种数据引擎，常用的包括：
+
+- InnoDB：由Innobase Oy公司开发的一款支持事务的数据库引擎，2006年被Oracle收购；
+- MyISAM：MySQL早期集成的默认数据库引擎，不支持事务。
+
+MySQL接口和数据库引擎的关系就好比某某浏览器和浏览器引擎（IE引擎或Webkit引擎）的关系。对用户而言，切换浏览器引擎不影响浏览器界面，切换MySQL引擎不影响自己写的应用程序使用MySQL的接口。
+使用MySQL时，不同的表还可以使用不同的数据库引擎。如果你不知道应该采用哪种引擎，记住总是选择InnoDB就好了。
+因为MySQL一开始就是开源的，所以基于MySQL的开源版本，又衍生出了各种版本，我们不是很关心。
+而MySQL官方版本又分了好几个版本：
+
+- Community Edition：社区开源版本，免费；
+- Standard Edition：标准版；
+- Enterprise Edition：企业版；
+- Cluster Carrier Grade Edition：集群版。
+
+以上版本的功能依次递增，价格也依次递增。不过，功能增加的主要是监控、集群等管理功能，对于基本的SQL功能是完全一样的。
+所以使用MySQL就带来了一个巨大的好处：可以在自己的电脑上安装免费的Community Edition版本，进行学习、开发、测试，部署的时候，可以选择付费的高级版本，或者云服务商提供的兼容版本，而不需要对应用程序本身做改动。
+
+
+## 安装MySQL
+要在Windows或Mac上安装MySQL，首先从MySQL官方网站下载最新的MySQL Community Server版本：
+[https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
+选择对应的操作系统版本，下载安装即可。在安装过程中，MySQL会自动创建一个`root`用户，并提示输入`root`口令。
+要在Linux上安装MySQL，可以使用发行版的包管理器。例如，Debian和Ubuntu用户可以简单地通过命令`apt-get install mysql-server`安装最新的MySQL版本。
+### 运行MySQL
+MySQL安装后会自动在后台运行。为了验证MySQL安装是否正确，我们需要通过`mysql`这个命令行程序来连接MySQL服务器。
+在命令提示符下输入`mysql -u root -p`，然后输入口令，如果一切正确，就会连接到MySQL服务器，同时提示符变为`mysql>`。
+输入`exit`退出MySQL命令行。注意，MySQL服务器仍在后台运行。
+
+
+## Docker安装
+在学习了Docker之后，基本上很难在回归到安装本地配环境的从前了。
+Docker安装更为简单和易于管理。
+pull一个版本直接启动服务即可。
+详细过程可以直接跳转：[https://www.yuque.com/angyi/qttrn5/eioqo6#kE0Nn](https://www.yuque.com/angyi/qttrn5/eioqo6#kE0Nn)
