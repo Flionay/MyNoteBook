@@ -90,16 +90,9 @@ controls = dbc.Card(
                     min=0,
                     max=list(t.keys())[-2],# t的最后一天
                     value=list(t.keys())[-2],
-                    # marks=t,
                     included=False,
-                    # step = 10,
-                    # marks={
-                    #         0: {'label': '2020-01-01', 'style': {'color': '#77b0b1'}},
-                    #         list(t.keys())[-1]: {'label': '11-13', 'style': {'color': '#77b0b1'}}
-                    #     }
                 ),
                 html.Div(id='slider-output-container',style={'margin-left': 20,'font-size':11}),
-                # html.Br(),
                 html.Hr(className="my-2"),
             ]
         ),
@@ -128,7 +121,6 @@ controls = dbc.Card(
                 html.Hr(className="my-2"),
                 html.Div(id='summary-container1',style={'font-size': 11}),
                 html.Div(id='summary-container2',style={'font-size': 11}),
-                # html.P(dbc.Button("预览",id='show_map', color="success",), className="lead",),
 
             ]
         ),
@@ -138,38 +130,23 @@ controls = dbc.Card(
 )
 
 
-
 # 汇总到app.layout
 app.layout = html.Div([
     navbar,
-    # html.Br(),
-    # html.Br(),
-    # html.Br(),
     # 
     dbc.Row([
         dbc.Col([
                 jumbotron,
                 html.Div(""),
                 html.P(''),
-                
                 controls,
-
         ],width={'size': 3,"offset": 1,"order":1},align='center'),
 
         dbc.Col([dcc.Graph(id='contourf', figure={},                    
-                    # config={
-                    #         'staticPlot': False,     # True, False
-                    #         'scrollZoom': True,      # True, False
-                    #         'doubleClick': 'reset',  # 'reset', 'autosize' or 'reset+autosize', False
-                    #         'showTips': False,       # True, False
-                    #         'displayModeBar': True,  # True, False, 'hover'
-                    #         'watermark': True,}
                     )
             ],lg={'size': 7, "offset": 1, 'order': 2,},align="center"),
         
     ]),
-
-   
 
 ])
 
@@ -217,11 +194,8 @@ def update_contour(option_slctd,value):
         res_suanfa = zhuanhuan(lat,lon,s_value)
         fig = px.scatter_mapbox(data_frame=res_suanfa,lon='lon',lat='lat',color='point',opacity=0.95,zoom=2.7,center={'lat':2.625,'lon':131.125})
     
-    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},  # remove the white gutter between the frame and map
-                    # hover appearance
-                    #title=dict(text = "2020年最新的温度全球分布",xanchor = 'center',xref = 'paper'),
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0},
                     hoverlabel=dict( 
-                        # bgcolor="white",     # white background
                         font_size=12,        # label font size
                         font_family="Inter"
                         ), # label font
@@ -244,6 +218,12 @@ if __name__ == '__main__':
 ### Dash主题文件cs下载网址
 
 https://bootswatch.com/  ，下载完之后只要放到项目文件夹下的`assets`文件夹下即可。
+
+### 注意事项 
+
+1. 如果我们通过不同的 url去渲染不同的页面的话，会碰到一个问题，就是我们可能会率先定义了回调，而回掉中的组件暂时还没渲染到app.layout中，因此Dash会引发异常以警告我们可能做错了。在这种情况下，我们可以通过设置忽略该异常。即：`app.config.suppress_callback_exceptions = True`
+
+2. Dash Callback 默认在用户改变输入时就会刷新callback，如果出现一种情景需要用户全部改变输入状态后再刷新，那么需要将输入转为State，这样就不会立即触发刷新。
 
 ### 帮助网址
 
