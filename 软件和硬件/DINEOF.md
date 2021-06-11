@@ -1,7 +1,8 @@
-![截屏2021-06-10下午3.40.41](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202106/截屏2021-06-10 下午3.40.41.png)
+![FcreOQ](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202106/FcreOQ.png)
+
 
 # DINEOF
-
+![WyRSiv](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202106/WyRSiv.png)
 好多人在遥感数据重构中会用到DINEOF方法，但是很多人不会用，这里记录笔记和教程。
 
 官网： http://modb.oce.ulg.ac.be/mediawiki/index.php/DINEOF
@@ -197,6 +198,5 @@ cloud_size = 500
 ```matlab
 %% 读取DINEOF之后的数据 
 chla_filled = gread('Output/chla_filled.nc');
-chla_filled_mean = nanmean(chla_filled,3);
 ```
 
