@@ -182,6 +182,7 @@ cloud_size = 500
 ```
 
 ## 运行DINEOF
+> 根据系统，将可执行文件 `dineof`，`dineof.init`放到同一个工作目录中，并确保`dineof.init`配置的数据路径可以被读取。同时保证 `dineof.init`中你的输出文件夹已经创建且可被访问到。
 
 配置好`dineof.init`文件之后，就可以在shell中通过如下命令来跑模型：
 
