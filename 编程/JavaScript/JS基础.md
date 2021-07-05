@@ -263,6 +263,21 @@ Idea - languages&frameworks - JavaScript - ECMAScript 6
 
 ### 3.1 函数定义和调用
 
+函数局部变量，内部可以访问外部，外部不能访问内部变量。
+
+```js
+var y = 2;
+function qj(){
+    var x=1;
+    console.log(x+y);
+
+}
+qj()
+// console.log(x)
+```
+
+
+
 ```js
 <script>
     function abs(x){
@@ -301,13 +316,76 @@ foo(10, 20, 30);
 // 10, 20, 30
 ```
 
+ES6引入了新特性，`rest`关键字用来获取除了定义的参数以外的其他所有参数；
+
 ### 3.2 变量作用域
 
 **变量提升**: 
 
 js使用`var`声明变量会提前解析，并将变量声明提前，而赋值语句还是停留在原位。由于JavaScript的这一怪异的“特性”，我们在函数内部定义变量时，请严格遵守“在函数内部首先申明所有变量”这一规则。
 
+ES6标准引入了新的关键字`const`来定义常量，`const`与`let`都具有块级作用域。
+
+==全局变量==会绑定到window上，js实际上只有这一个全局作用域，任何变量都会在函数局部作用域进行查找，然后去window全局作用域查找，找不到就会报错。
+
+不同函数有同名的内部变量，不受影响；函数内外都有同名变量，优先内部变量，屏蔽外部变量；函数内部可以访问外部，外部不能访问内部。
+
+```js
+var x='xxx';
+console.log(x);
+console.log(window.x)
+```
+
+> 规范：由于所有的全局变量都会绑定到window上。如果不同的js文件，使用了相同的全局变量，会产生冲突。
+
+可以利用对象来解决这个问题，将需要的变量定义在一个对象中。把自己的代码用到的变量放到自定义唯一的空间名字中，解决变量冲突的问题。
+
+```js
+<script>
+    var myapp = {};
+    myapp.name = 'xxx';
+    myapp.add = function(a,b){
+        return a+b
+    }
+</script>
+```
+
+==局部变量==
+
 使用`let`声明，必须先声明后使用，这是正常逻辑。为了解决块级作用域，ES6引入了新的关键字`let`，用`let`替代`var`可以申明一个块级作用域的变量。
 
-ES6标准引入了新的关键字`const`来定义常量，`const`与`let`都具有块级作用域。
+```js
+function app(){
+    for(let i=0;i<100;i++){
+        console.log(i);
+    }
+   // console.log(i+1); //报错
+}
+app();
+```
+
+==常量==
+
+```js
+const pi = 3.14 //readonly
+```
+
+### 3.3 方法
+
+方法就是把函数放在对象里面
+
+```js
+var app={
+    name:"qq",
+    birth:2005,
+    age:function(){
+        var now = new Date().getFullYear();
+        return now-this.birth;
+    }
+}
+
+console.log(app.birth);
+console.log(app.age());
+
+```
 
