@@ -389,3 +389,34 @@ console.log(app.age());
 
 ```
 
+## ES6新特性
+
+1. 引入常量 const
+
+2. 数组的解构
+
+```js
+let arr=[1,2,3]
+Let[aa,bb,cc] =arr;
+
+//对象的解构
+let {name , age} = person;
+```
+
+3. 字符串 1）可以多行字符串 模版 2）字符串扩展，str.startWith(), 3) 字符串模版 引入变量 `${}`
+
+4. 函数优化：函数默认值 跟python一样；可变长度参数
+
+   `function add(...a){}`参数个数判断 引入关键字
+
+5. 箭头函数 
+
+   ```js
+   function add(a,b){
+     return a+b;
+   }
+   let add=(a,b) => a+b;
+   ```
+
+   
+
