@@ -110,7 +110,7 @@ sudo ./NVIDIA-Linux-x86_64-450.142.00.run -no-x-check -no-nouveau-check -no-open
 
 安装完成后执行`nvidia-smi` 查看是否安装成功！
 
-![image-20210826163213023](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20210826163213023.png)
+![image-20210911190539956](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202109/image-20210911190539956.png)
 
 出现类似信息，表明驱动安装成功！
 
@@ -149,7 +149,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 
 13、下载cudnn https://developer.nvidia.com/rdp/cudnn-download
 下载cudnn需要登录账户，可以用QQ或者微信注册一个用户然后登录找到对应cuda版本的cudnn点开找到第一个library点击下载就可以了。
-![image.png](http://www.mlzhilu.com/upload/2020/11/image-7a7f26ac6fc644969f006c30df578094.png)
+![image.png](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202109/image-7a7f26ac6fc644969f006c30df578094.png)
 解压下载好的cudnn压缩包，然后执行
 
 ```
@@ -177,7 +177,7 @@ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 ```
 
 如果result=PASS表示通过
-![image.png](http://www.mlzhilu.com/upload/2020/11/image-833df671beeb4c18a0f3f1bce2bd5dc5.png)
+![image.png](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202109/image-833df671beeb4c18a0f3f1bce2bd5dc5.png)
 然后cd到NVIDIA_CUDA-11.0_Samples/1_Utilities/bandwidthTest下，执行：
 
 ```
@@ -185,7 +185,7 @@ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 ```
 
 如果result=PASS表示通过
-![image.png](http://www.mlzhilu.com/upload/2020/11/image-3bd9492be6314f9d82481b87fe04f444.png)
+![image.png](https://cdn.jsdelivr.net/gh/Flionay/pic_bed@master/Upic/202109/image-3bd9492be6314f9d82481b87fe04f444.png)
 
 至此，全部配置完成，如有错误欢迎留言指出。
 
