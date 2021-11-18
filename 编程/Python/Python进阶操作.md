@@ -25,7 +25,6 @@ python3 提供了enum模块，定义类时可以继承该模块，创建一个�
 ```python
 from enum import Enum,unique
 # unique 用来确保没有重复项
-
 @unique
 class TitleLevel(Enum):
     # 进阶用法 重写__new__()方法
@@ -46,6 +45,7 @@ print(TitleLevel.primary.chinese)
 for level in TitleLevel:
     print((level.name,level.chinese,level.salary))
 ```
+
 ## 字节码类型
 ```python 
 import hashlib
@@ -344,4 +344,164 @@ print(config.host)
 ## functools
 
 functools模块提供了一些非常神奇的高阶函数， 其中为人熟知的有reduce，partial，wraps， 他们是作用于或返回其他函数的函数， 一般来说任何**可调用的对象**都可以用这个模块里的函数进行处理。
+
+# 有用的第三方库
+
+## 防止rm误删除
+
+### 1. trash-cli
+
+```text
+rm -rf 
+```
+
+上面这个命令，恐怕是这个世界上最危险的命令，在每一次程序员删库跑路的事件中都扮演着关键角色。在日常工作中，一不留神，就可能因一时疏忽而误删除了关键文件导致服务器出现故障或是服务不可用。由于linux系统没有回收站功能，这导致使用rm删除的文件很难恢复。
+
+本文给大家介绍的，是一个实现了回收站功能的python库，使用它，你可以放心的执行rm命令而不必担心误删除的数据无法恢复，使用pip进行安装
+
+```text
+pip install trash-cli
+```
+
+安装结束后，你可以使用which trash 来查看工具的安装目录，在我的机器上，安装目录是/opt/conda/bin ， 使用ll /opt/conda/bin/trash* 命令可以查看到所有相关命令
+
+```text
+/opt/conda/bin/trash                    # 删除文件， 同trash-put
+/opt/conda/bin/trash-empty              # 清空回收站
+/opt/conda/bin/trash-list               # 列出回收站里的文件
+/opt/conda/bin/trash-put                # 删除文件
+/opt/conda/bin/trash-restore            # 恢复回收站里的指定文件
+/opt/conda/bin/trash-rm                 # 删除回收站里的指定文件
+```
+
+你可以使用trash命令代替rm命令，更好的方法是设置rm命令的别名，修改.bashrc文件，增加下面这行
+
+```text
+alias rm="trash"
+```
+
+设置以后，记得执行source .bashrc 使配置生效，现在，你可以放心的使用rm命令了，当你想恢复某个文件时，执行trash-list 列出回收站中的文件，使用trash-restore 恢复你想要恢复的文件。
+
+### 2. trash-cli 实现原理
+
+#### 2.1 被删除的文件去哪了
+
+你一定好奇，那些被删除的文件去哪了，默认情况下，这些文件都被放在了 $HOME/.local/share/Trash 目录下，这个目录下有两个文件夹，分别是files 和info， files目录下存放的就是被删除的文件，info目录下存放的是被删除文件的信息，包括被删除前所在目录和被删除时间，格式如下
+
+```text
+[Trash Info]
+Path=/home/jovyan/server.py
+DeletionDate=2020-06-15T11:30:58
+```
+
+每一个被删除的文件或文件夹，都会有一个与之相对应的trashinfo文件，记录着被删除文件的关键信息。当使用trash-restore恢复文件时，就是根据这些信息将文件move到指定位置。
+
+#### 2.2 回收站的目录是否可设置
+
+默认是$HOME/.local/share/Trash ，但可以进行修改，这一点，源码里说的很清楚
+
+```python
+class HomeTrashCan:
+    def __init__(self, environ):
+        self.environ = environ
+    def path_to(self, out):
+        if 'XDG_DATA_HOME' in self.environ:
+            out('%(XDG_DATA_HOME)s/Trash' % self.environ)
+        elif 'HOME' in self.environ:
+            out('%(HOME)s/.local/share/Trash' % self.environ)
+```
+
+如果你希望更改回收站的目录，那么可以通过设置XDG_DATA_HOME 环境变量来实现。
+
+##  比csv更高效的数据格式
+
+还在用csv这种格式存储数据么？有一种比csv更快，生成文件体积更小的数据格式---feather。
+feather 是一种用于存储数据帧的数据格式，它最初是为python和R之间更快速通信而设计的，它尽可能快的将数据帧从内存中读取出来或是写入内存。
+
+生成csv文件，唯一的好处是可以打开文件查看其中的数据，但如果你没有这方面的需要而且数据量比较大，那么你应当抛弃csv转而使用feather，使用pip安装
+
+```text
+pip install feather-format
+```
+
+下面的例子将充分体现feather的优势
+
+```python
+import time
+import feather
+import numpy as np
+import pandas as pd
+
+np.random.seed = 42
+df_size = 10_000_000
+
+df = pd.DataFrame({
+    'a': np.random.rand(df_size),
+    'b': np.random.rand(df_size),
+    'c': np.random.rand(df_size),
+    'd': np.random.rand(df_size),
+    'e': np.random.rand(df_size)
+})
+
+t1 = time.time()
+df.to_feather('1M.feather')
+t2 = time.time()
+df.to_csv('to.csv')
+t3 = time.time()
+
+print(f'保存feather耗时{t2-t1}')
+print(f'保存csv耗时{t3-t2}')
+```
+
+代码里使用DataFrame的to_feather方法保存数据，在方法里面用到了feather模块，你也可以直接使用feather保存数据
+
+```text
+feather.write_dataframe(df, '1M.feather')
+```
+
+现在让我们来比较一下保存文件时的耗时时间
+
+```text
+保存feather耗时3.7854344844818115
+保存csv耗时119.42699456214905
+```
+
+这看起来有点夸张，足足有30倍的差距，再来看看生成的文件大小，1M.feather 的大小是381M，而to.csv文件的大小是993M，相差了足足2.6倍。
+
+更小的体积，更快的写入速度，最后来比较一下读取文件的速度
+
+```python
+t1 = time.time()
+pd.read_feather('1M.feather')
+t2 = time.time()
+pd.read_csv('to.csv')
+t3 = time.time()
+```
+
+两种文件的读取速度如下
+
+```text
+读取feather耗时0.37110209465026855
+读取csv耗时8.036199569702148
+```
+
+读取速度相差了20倍，feather完全碾压csv。
+
+为什么feather会这么快呢，简单说，它是一种二进制数据格式，代码里生成的dataframe占用内存可以通过df.info()来查看，是381.5M，生成的feather文件是381M，feather将内存中的数据几乎是原封不动的写入到文件中，因而获得了超高的写入效率，且文件体积几乎无法变得更小。
+
+看到这么牛叉的库，动心了吧，在处理较大数据量时，feather绝对是一把利器，节省时间，节省硬盘。
+
+# python函数进阶
+
+一入编程深四海，或许你已经完成了python基础知识的学习，掌握了函数的定义与调用，也清楚函数的传参与返回值，这些对于进阶学习来说，远远不够。
+
+你还不清楚函数调用时python是如何管理上下文信息，你还没有掌握lambda表达式函数， 还有compile, partial， zip, map， reduce等函数等待你去学习和掌握。
+
+本章主要分为3个部分
+
+1. [装饰器](http://www.coolpython.net/python_senior/function/decorator_index.html)
+2. [深入研究递归](http://www.coolpython.net/python_senior/function/recursion_index.html)
+3. [高阶函数](http://www.coolpython.net/python_senior/function/senior_function_index.html)
+
+## 装饰器
 

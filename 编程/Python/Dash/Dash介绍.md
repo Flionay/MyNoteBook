@@ -229,6 +229,7 @@ https://bootswatch.com/  ，下载完之后只要放到项目文件夹下的`ass
 
 1. 官方文档 https://dash.plotly.com/
 2. 官方社区 https://community.plotly.com/
+2. 博客园非常好的Dash教程，来自博主费弗里[Dash - 标签 - 费弗里 - 博客园 (cnblogs.com)](https://www.cnblogs.com/feffery/tag/Dash/)
 3. Youtube 非常详细的博主教程：https://www.youtube.com/channel/UCqBFsuAz41sqWcFjZkqmJqQ
 4. dash bootstrap components帮助你创建更佳个性化漂亮的dash应用。http://dash-bootstrap-components.opensource.faculty.ai/
 
