@@ -30,6 +30,6 @@ https://docsify.js.org/#/?id=docsify
 
 如果你有备案好的域名，一定要利用好二级域名，可以构建多个网址哦！
 
-![image-20211103171332434](/Users/angyi/Library/Application Support/typora-user-images/image-20211103171332434.png)
+
 
 ![image-20211103172354047](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/uPic/2021-11/image-20211103172354047.png)
