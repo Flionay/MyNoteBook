@@ -1,17 +1,16 @@
-on: [push] # push 代码时触发
-jobs: 
-    deploy: 
-        runs-on: ubuntu-latest
-        name: docsify 腾讯静态托管
-        steps: 
-          - name: Checkout
-            uses: actions/checkout@v2
-          - name: Deploy to Tencent CloudBase
-            uses: TencentCloudBase/cloudbase-action@v2
-            with: 
-              # 云开发的访问密钥 secretId 和 secretKey
-              secretId: ${{ secrets.SECRETID }}
-              secretKey: ${{ secrets.SECRETKEY }}
-              # 云开发的环境id
-              envId: ${{ secrets.ENV_ID }}
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Tencent Cloudbase Github Action Example
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy to Tencent CloudBase
+        uses: TencentCloudBase/cloudbase-action@v2
+        with:
+          secretId: ${{secrets.SECRETID}}
+          secretKey: ${{secrets.SECRETKEY}}
+          envId: ${{secrets.ENV_ID}}
 
