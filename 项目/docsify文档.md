@@ -91,6 +91,12 @@ docsify generate path # 会在path目录下生成 _sidebar.md 	文件
 
 如果你有备案好的域名，一定要利用好二级域名，可以构建多个网址哦！
 
+利用github自动部署到腾讯静态托管，可参考：
+
+https://cloud.tencent.com/document/product/1210/52636
+
+
+
 
 
 ![image-20211103172354047](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/uPic/2021-11/image-20211103172354047.png)
