@@ -18,11 +18,72 @@
 
 **docsify**的最大优势是可以让使用者感受到**用写博客的姿势去编写文档，反过来说也行：用写文档的姿势去写博客**。`docsify`的学习成本很低，部署简单，官方文档十分完善，原则上只需要理解`markdown`的语法和`Node.js`的安装即可，对于非`IT`技术从业者也十分友好。知名的技术公众号号主**JavaGuide**的站点就是采用`docsify`构建的。
 
-## 安装使用
+## 安装 初始化
 
-根据官网教程来即可，比较简单。
+根据官网教程来即可，比较简单。需要`node` 和`npm` 环境.
 
 https://docsify.js.org/#/?id=docsify
+```bash
+# 安装
+npm i docsify-cli -g    
+
+# 初始化项目
+cd YourDocDir
+docsify init ./docs # 初始化里面的docs目录，放文章
+
+```
+
+初始化成功后，可以看到 `./docs` 目录下创建的几个文件
+
+- `index.html` 入口文件
+- `README.md` 会做为主页内容渲染
+- `.nojekyll` 用于阻止 GitHub Pages 忽略掉下划线开头的文件
+
+直接编辑 `docs/README.md` 就能更新文档内容，当然也可以[添加更多页面](https://docsify.js.org/#/zh-cn/more-pages)。
+
+```bash
+docsify serve docs # 本地启动服务 预览
+```
+
+## 配置侧边栏目录
+
+为了获得侧边栏，您需要创建自己的_sidebar.md，你也可以自定义加载的文件名。默认情况下侧边栏会通过 Markdown 文件自动生成，效果如当前的文档的侧边栏。首先配置 `loadSidebar` 选项，具体配置规则见[配置项#loadSidebar](https://docsify.js.org/#/zh-cn/configuration?id=loadsidebar)。
+
+```html
+<!-- index.html -->
+
+<script>
+  window.$docsify = {
+    loadSidebar: true
+  }
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+```
+
+接着创建 `_sidebar.md` 文件，内容如下
+
+```markdown
+<!-- docs/_sidebar.md -->
+
+* [首页](zh-cn/)
+* [指南](zh-cn/guide)
+```
+
+需要在 `./docs` 目录创建 `.nojekyll` 命名的空文件，阻止 GitHub Pages 忽略命名是下划线开头的文件。
+
+复制我们的markdown文件到docs里面，利用generate命令生成sidebar.md 
+
+```bash
+docsify generate path # 会在path目录下生成 _sidebar.md 	文件
+```
+
+
+
+如果将所有的目录都这样配置到最外层的`_sidebar.md` ，会很乱，像这样：
+
+<img src="/Users/angyi/Library/Application Support/typora-user-images/image-20220401143302383.png" alt="image-20220401143302383" style="zoom:50%;" />
+
+我们希望浏览一个目录时，只显示这个目录自己的侧边栏，这可以通过每个文件夹中都添加一个`_sidebar.md` 文件来实现
 
 ## 部署
 
