@@ -1,19 +1,4 @@
----
-title: 【PyTorch】1. 为什么要学PyTorch
-author: Angyi
-top: false
-cover: false
-toc: true
-mathjax: false
-date: 2022-04-10 21:05:54
-img: http://pic.angyi.online/picgo/202204111405375.png
-coverImg:
-password:
-summary: 利用docsify生成文档网站,简洁漂亮，增强文本阅读体验！
-tags:
-- 博客
-categories: 博客
----
+
 
 # 【PyTorch】1. 为什么要学PyTorch 
 
