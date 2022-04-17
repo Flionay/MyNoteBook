@@ -24,8 +24,6 @@
     - [3. 视图集成](././Java/SpringBoot/3.%20视图集成.md)
     - [4. 打包](././Java/SpringBoot/4.%20打包.md)
     - [5. SpringBoot&MyBatis](././Java/SpringBoot/5.%20SpringBoot&MyBatis.md)
-  - SpringMVC
-    - [介绍](././Java/SpringMVC/介绍.md)
   - Web
     - [1. JavaWeb概述](././Java/Web/1.%20JavaWeb概述.md)
     - [2. JavaWeb基础](././Java/Web/2.%20JavaWeb基础.md)
@@ -148,3 +146,4 @@
   - [网卡](././软件和硬件/网卡.md)
   - [装机](././软件和硬件/装机.md)
   - [使用LateX写论文](././软件和硬件/使用LateX写论文.md)
+  - [[效率神器--Alfred]]

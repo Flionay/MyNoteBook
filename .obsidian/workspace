@@ -1,0 +1,121 @@
+{
+  "main": {
+    "id": "b96fb2108bf1f37e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0476802ac94ab4bd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "项目/docsify文档.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "70b27fd7868bc46a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed0b1e417e0688bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b02b74cd587fb77e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "81b8188b5119c29a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 235.5
+  },
+  "right": {
+    "id": "db68153c3f36ee21",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4f57a98e242f092",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "85b4e5c7eb4b5fe3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "项目/docsify文档.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "1c8625cd4d559970",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "0a2e88dc5204755e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "项目/docsify文档.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 256.5
+  },
+  "active": "0476802ac94ab4bd",
+  "lastOpenFiles": [
+    "项目/docsify文档.md",
+    "_sidebar.md",
+    "算法/深度学习/基于VOC数据集的Pytorch语义分割任务代码流程.md",
+    "算法/深度学习/车流场景识别.md",
+    "算法/深度学习/【PyTorch】1. 为什么要学PyTorch.md",
+    "算法/深度学习/【PyTorch】2. 低阶api .md",
+    "算法/深度学习/榜样的力量-吴恩达采访人工智能大师实录.md",
+    "项目/静态托管网站的最佳解决方案.md",
+    "项目/图床问题完美解决方案 (1).md",
+    "算法/深度学习/Fcn-DeepLab-Unet语义分割效果.md"
+  ]
+}

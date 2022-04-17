@@ -4,8 +4,6 @@
 
 数据集下载快速链接请点击 [数据镜像](https://pjreddie.com/projects/pascal-voc-dataset-mirror/) （建议配合迅雷）
 
-
-
 ## 数据集构建
 
 目标：构建Pytorch 可直接使用的数据集
