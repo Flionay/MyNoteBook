@@ -12,6 +12,8 @@
   - [5.Flask操作数据库](后端/Flask/5.Flask操作数据库.md)
   - [6.会话机制](后端/Flask/6.会话机制.md)
   - [7.权限验证](后端/Flask/7.权限验证.md)
-- [SQL](后端/SQL/README.md)
 
+
+- SQL
+  - [MySql](后端/SQL/README.md)
 

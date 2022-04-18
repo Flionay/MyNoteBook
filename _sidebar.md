@@ -1,4 +1,5 @@
 - 人工智能
+
   - [PyTorch](人工智能/README.md)
   - [TensorFlow](人工智能/README.md)
   - [实例项目](人工智能/README.md)
@@ -18,91 +19,20 @@
   - [Flask](/后端/README.md)
   - [SQL](后端/README.md)
 
-
-- 生活
-  - 读书
-
-系统
-  - [Git常用命令清单](././系统/Git常用命令清单.md)
-  - Linux
-    - [Crontab](././系统/Linux/Crontab.md)
-    - [Linux添加新硬盘挂载](././系统/Linux/Linux添加新硬盘挂载.md)
-    - [README](././系统/Linux/README.md)
-    - [SSH远程连接服务器的那些事](././系统/Linux/SSH远程连接服务器的那些事.md)
-    - [sidebar](././系统/Linux/sidebar.md)
-    - [安装nVidia套件和tensorflow环境](././系统/Linux/安装nVidia套件和tensorflow环境.md)
-    - [局域网无网络服务器联网解决方案](././系统/Linux/局域网无网络服务器联网解决方案.md)
-  - 云服务器
-    - [Hexo](././系统/云服务器/Hexo.md)
-    - [Hexo部署到阿里云](././系统/云服务器/Hexo部署到阿里云.md)
-    - [Hugo迁移到Hexo](././系统/云服务器/Hugo迁移到Hexo.md)
-    - [docsify文档](././系统/云服务器/docsify文档.md)
-    - [疫情监控](././系统/云服务器/疫情监控.md)
-    - [图床问题完美解决方案](././系统/云服务器/图床问题完美解决方案.md)
-    - [静态托管网站的最佳解决方案](././系统/云服务器/静态托管网站的最佳解决方案.md)
-  - 软件和硬件
-    - [DINEOF](././系统/软件和硬件/DINEOF.md)
-    - [Matlab也可以爬虫，青岛机场航班信息获取](././系统/软件和硬件/Matlab也可以爬虫，青岛机场航班信息获取.md)
-    - [V2ray](././系统/软件和硬件/V2ray.md)
-    - [声卡](././系统/软件和硬件/声卡.md)
-    - [网卡](././系统/软件和硬件/网卡.md)
-    - [装机](././系统/软件和硬件/装机.md)
-    - [使用LateX写论文](././系统/软件和硬件/使用LateX写论文.md)
-    - [利用Obsidian构建知识体系](././系统/软件和硬件/利用Obsidian构建知识体系.md)
-    - [效率神器--Alfred](././系统/软件和硬件/效率神器--Alfred.md)
-    - [效率软件分享](././系统/软件和硬件/效率软件分享.md)
-- 草稿
-  - MyBatis
-    - [MyBatis](././草稿/MyBatis/MyBatis.md)
-  - Spring
-    - [SpringIOC](././草稿/Spring/SpringIOC.md)
-  - SpringBoot
-    - [1. Spring5 零配置开发](././草稿/SpringBoot/1.%20Spring5%20零配置开发.md)
-    - [2. springboot入门以及核心配置](././草稿/SpringBoot/2.%20springboot入门以及核心配置.md)
-    - [3. 视图集成](././草稿/SpringBoot/3.%20视图集成.md)
-    - [4. 打包](././草稿/SpringBoot/4.%20打包.md)
-    - [5. SpringBoot&MyBatis](././草稿/SpringBoot/5.%20SpringBoot&MyBatis.md)
-  - SpringMVC
-    - [介绍](././草稿/SpringMVC/介绍.md)
-  - [VuePress](././草稿/VuePress.md)
-  - Web
-    - [1. JavaWeb概述](././草稿/Web/1.%20JavaWeb概述.md)
-    - [2. JavaWeb基础](././草稿/Web/2.%20JavaWeb基础.md)
-    - [5.BootStrap](././草稿/Web/5.BootStrap.md)
-    - [SSM](././草稿/Web/SSM.md)
-  - 个人博客
-    - [1.需求设计](././草稿/个人博客/1.需求设计)
-    - [1.需求设计](././草稿/个人博客/1.需求设计.md)
-    - [2. SpringBoot整合Mybatis分页插件](././草稿/个人博客/2.%20SpringBoot整合Mybatis分页插件.md)
-  - 网络编程
-    - [网络编程](././草稿/网络编程/网络编程.md)
+- 系统
+  - [Git常用命令清单](系统/README.md)
+  - [Linux](系统/README.md)
+  - [云服务器](系统/README.md)
+  - [软件和硬件](系统/README.md)
 
 - 编程语言
-  - Java
-    - [1. Java基础语法](././编程语言/Java/1.%20Java基础语法.md)
-    - [2. 面向对象](././编程语言/Java/2.%20面向对象.md)
-    - [3. 封装 继承 多态](././编程语言/Java/3.%20封装%20继承%20多态.md)
-    - [4. Java常用API](././编程语言/Java/4.%20Java常用API.md)
-    - [5. 异常处理](././编程语言/Java/5.%20异常处理.md)
-    - [6. 注解和反射](././编程语言/Java/6.%20注解和反射.md)
-    - [7. 集合框架和泛型](././编程语言/Java/7.%20集合框架和泛型.md)
-    - [8. 网络编程](././编程语言/Java/8.%20网络编程.md)
-    - [JVM](././编程语言/Java/JVM.md)
-    - [JavaSE.xmind](././编程语言/Java/JavaSE.xmind)
-    - [README](././编程语言/Java/README.md)
-    - [算法学习路线](././编程语言/Java/算法学习路线.md)
-  - Python
-    - [Matplotlib常用布局-代码仓库](././编程语言/Python/Matplotlib常用布局-代码仓库.md)
-    - [Python 多线程](././编程语言/Python/Python%20多线程.md)
-    - [Python 多进程](././编程语言/Python/Python%20多进程.md)
-    - [Python进阶操作](././编程语言/Python/Python进阶操作.md)
-    - [pands 最大连续列](././编程语言/Python/pands%20最大连续列.md)
-    - [python 调用命令行参数](././编程语言/Python/python%20调用命令行参数.md)
-    - [协程 asyncio & 异步](././编程语言/Python/协程%20asyncio%20&%20异步.md)
-    - [多线程多进程](././编程语言/Python/多线程多进程.md)
-    - [迭代器，生成器](././编程语言/Python/迭代器，生成器.md)
-  - 数据结构与算法
-    - [01动态数组ArrayList](././编程语言/数据结构与算法/01动态数组ArrayList.md)
-    - [02链表LinkedList](././编程语言/数据结构与算法/02链表LinkedList.md)
-    - [Python数据结构](././编程语言/数据结构与算法/Python数据结构.md)
-    - [剑值offer](././编程语言/数据结构与算法/剑值offer.md)
+  - [Java](编程语言/README.md)
+  - [Python](编程语言/README.md)
+  - [数据结构与算法](编程语言/README.md)
+
+
+- 生活
+  - [读书](生活/README.md)
+
+
+
