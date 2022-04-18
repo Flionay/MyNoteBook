@@ -1,3 +1,7 @@
+* [首页](README.md)
+
+* [知识体系](目录/README.md)
+
 * 人工智能
   * [PyTorch](人工智能/PyTorch/README.md)
   * [TensorFlow](zh-cn/more-pages.md)
@@ -13,9 +17,9 @@
 * 编程语言
     * [Python](Python/README.md)
     * [Java](Java/README.md)
-    * [数据库]
+    * [数据库](SQL/README.md)
 
 * 开发框架
-    * [前端]()
+    * [前端](前端/README.md)
     * [后端]()
     * [数据库](SQL/README.md)

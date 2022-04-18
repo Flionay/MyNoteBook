@@ -1,136 +1,108 @@
-- Docker
-  - [1.概述](././Docker/1.概述.md)
-  - [2.学习路线](././Docker/2.学习路线.md)
-  - [3.三个基础概念](././Docker/3.三个基础概念.md)
-  - [4.常用命令](././Docker/4.常用命令.md)
-  - [Nvidia-docker](././Docker/Nvidia-docker.md)
-- Java
-  - [1. Java基础语法](././Java/1.%20Java基础语法.md)
-  - [2. 面向对象](././Java/2.%20面向对象.md)
-  - [3. 封装 继承 多态](././Java/3.%20封装%20继承%20多态.md)
-  - [4. Java常用API](././Java/4.%20Java常用API.md)
-  - [5. 异常处理](././Java/5.%20异常处理.md)
-  - [6. 注解和反射](././Java/6.%20注解和反射.md)
-  - [7. 集合框架和泛型](././Java/7.%20集合框架和泛型.md)
-  - [8. 网络编程](././Java/8.%20网络编程.md)
-  - [JVM](././Java/JVM.md)
-  - MyBatis
-    - [MyBatis](././Java/MyBatis/MyBatis.md)
-  - Spring
-    - [SpringIOC](././Java/Spring/SpringIOC.md)
-  - SpringBoot
-    - [1. Spring5 零配置开发](././Java/SpringBoot/1.%20Spring5%20零配置开发.md)
-    - [2. springboot入门以及核心配置](././Java/SpringBoot/2.%20springboot入门以及核心配置.md)
-    - [3. 视图集成](././Java/SpringBoot/3.%20视图集成.md)
-    - [4. 打包](././Java/SpringBoot/4.%20打包.md)
-    - [5. SpringBoot&MyBatis](././Java/SpringBoot/5.%20SpringBoot&MyBatis.md)
-  - Web
-    - [1. JavaWeb概述](././Java/Web/1.%20JavaWeb概述.md)
-    - [2. JavaWeb基础](././Java/Web/2.%20JavaWeb基础.md)
-    - [5.BootStrap](././Java/Web/5.BootStrap.md)
-    - [SSM](././Java/Web/SSM.md)
-  - [算法学习路线](././Java/算法学习路线.md)
-- Linux
-  - [Crontab](././Linux/Crontab.md)
-  - [Git常用命令清单](././Linux/Git常用命令清单.md)
-  - [Linux添加新硬盘挂载](././Linux/Linux添加新硬盘挂载.md)
-  - [SSH远程连接服务器的那些事](././Linux/SSH远程连接服务器的那些事.md)
-  - [安装nVidia套件和tensorflow环境](././Linux/安装nVidia套件和tensorflow环境.md)
-  - [局域网无网络服务器联网解决方案](././Linux/局域网无网络服务器联网解决方案.md)
-- Python
-  - Dash
-    - [Dash介绍](././Python/Dash/Dash介绍.md)
-    - [多线程部署](././Python/Dash/多线程部署.md)
-  - Django
-    - [Django后台加入markdown](././Python/Django/Django后台加入markdown.md)
-  - Flask
-    - [1.认识和HelloWorld](././Python/Flask/1.认识和HelloWorld.md)
-    - [2.Flask配置加载](././Python/Flask/2.Flask配置加载.md)
-    - [3.路由与蓝图](././Python/Flask/3.路由与蓝图.md)
-    - [4. jinja2模版](././Python/Flask/4.%20jinja2模版.md)
-    - [5.Flask操作数据库](././Python/Flask/5.Flask操作数据库.md)
-    - [6.会话机制](././Python/Flask/6.会话机制.md)
-    - [7.权限验证](././Python/Flask/7.权限验证.md)
-  - [Python 多线程](././Python/Python%20多线程.md)
-  - [Python进阶操作](././Python/Python进阶操作.md)
-  - 数据分析
-    - [CMIP6数据下载](././Python/数据分析/CMIP6数据下载.md)
-    - [pands 最大连续列](././Python/数据分析/pands%20最大连续列.md)
-    - [常用下载数据方式](././Python/数据分析/常用下载数据方式.md)
-  - [多线程多进程](././Python/多线程多进程.md)
+- 人工智能
+  - [PyTorch](人工智能/README.md)
+  - [TensorFlow](人工智能/README.md)
+  - [实例项目](人工智能/README.md)
+  - [数据处理](人工智能/README.md)
+  - [算法模型](人工智能/README.md)
 
-- 其他
-  - [效率软件分享](././其他/效率软件分享.md)
+
 - 前端
-  - CSS
-    - [1. CSS学习路线](././前端/CSS/1.%20CSS学习路线.md)
-    - [2. 基本入门和导入方式](././前端/CSS/2.%20基本入门和导入方式.md)
-    - [3. 选择器](././前端/CSS/3.%20选择器.md)
-    - [4. 美化网页元素](././前端/CSS/4.%20美化网页元素.md)
-    - [5. 定位 浮动 对齐](././前端/CSS/5.%20定位%20浮动%20对齐.md)
-    - [CSS汇总笔记](././前端/CSS/CSS汇总笔记.md)
-  - HTML
-    - [Html](././前端/HTML/Html.md)
-  - JavaScript
-    - [BOM&DOM](././前端/JavaScript/BOM&DOM.md)
-    - [JS基础](././前端/JavaScript/JS基础.md)
-    - [JS对象](././前端/JavaScript/JS对象.md)
-    - [Jquery](././前端/JavaScript/Jquery.md)
-  - TypeScript
-    - [HelloWorld](././前端/TypeScript/HelloWorld.md)
-  - Vue
-    - [1.初识Vue](././前端/Vue/1.初识Vue.md)
-- 算法
-  - 机器学习
-    - [决策树](././算法/机器学习/决策树.md)
-    - [交叉验证](././算法/机器学习/交叉验证.md)
-    - [数据处理与特征工程](././算法/机器学习/数据处理与特征工程.md)
-  - 深度学习
-    - [Dask 高效的Python并行计算库](././算法/深度学习/Dask%20高效的Python并行计算库.md)
-    - [Fcn-DeepLab-Unet语义分割效果](././算法/深度学习/Fcn-DeepLab-Unet语义分割效果.md)
-    - [Pytorch 自定义数据集](././算法/深度学习/Pytorch%20自定义数据集.md)
-    - [Pytroch中的损失函数](././算法/深度学习/Pytroch中的损失函数.md)
-    - [Xarray 进阶](././算法/深度学习/Xarray%20进阶.md)
-    - [python 调用命令行参数](././算法/深度学习/python%20调用命令行参数.md)
-    - [理解Python中的装饰器](././算法/深度学习/理解Python中的装饰器.md)
-    - [基于VOC数据集的Pytorch语义分割任务代码流程](././算法/深度学习/基于VOC数据集的Pytorch语义分割任务代码流程.md)
-    - [基于YOLOv5的离岸流（RipCurrent ）识别](././算法/深度学习/基于YOLOv5的离岸流（RipCurrent%20）识别.md)
-    - [榜样的力量-吴恩达采访人工智能大师实录](././算法/深度学习/榜样的力量-吴恩达采访人工智能大师实录.md)
-    - [车流场景识别](././算法/深度学习/车流场景识别.md)
-  - 数据结构与算法
-    - [01动态数组ArrayList](././算法/数据结构与算法/01动态数组ArrayList.md)
-    - [02链表LinkedList](././算法/数据结构与算法/02链表LinkedList.md)
-    - [Python数据结构](././算法/数据结构与算法/Python数据结构.md)
-    - [剑值offer](././算法/数据结构与算法/剑值offer.md)
+  - [CSS](/前端/README.md)
+  - [HTML](/前端/README.md)
+  - [JavaScript](/前端/README.md)
 
-- 读书
-  - [认识自己](././读书/认识自己.md)
-  - 只有一个人生-周国平
-    - [丰富的安静](././读书/只有一个人生-周国平/丰富的安静.md)
-    - [习惯于失去](././读书/只有一个人生-周国平/习惯于失去.md)
-    - [成为你自己](././读书/只有一个人生-周国平/成为你自己.md)
-    - [活出真性情](././读书/只有一个人生-周国平/活出真性情.md)
-    - [活着的滋味](././读书/只有一个人生-周国平/活着的滋味.md)
-- 项目
-  - [Hexo](././项目/Hexo.md)
-  - [Hexo部署到阿里云](././项目/Hexo部署到阿里云.md)
-  - [Hugo迁移到Hexo](././项目/Hugo迁移到Hexo.md)
-  - [VuePress](././项目/VuePress.md)
-  - [docsify文档](././项目/docsify文档.md)
+- 后端
+  - [Dash](/后端/README.md)
+  - [Django](/后端/README.md)
+  - [Docker](后端/README.md)
+  - [Flask](/后端/README.md)
+  - [SQL](后端/README.md)
+
+
+- 生活
+  - 读书
+
+系统
+  - [Git常用命令清单](././系统/Git常用命令清单.md)
+  - Linux
+    - [Crontab](././系统/Linux/Crontab.md)
+    - [Linux添加新硬盘挂载](././系统/Linux/Linux添加新硬盘挂载.md)
+    - [README](././系统/Linux/README.md)
+    - [SSH远程连接服务器的那些事](././系统/Linux/SSH远程连接服务器的那些事.md)
+    - [sidebar](././系统/Linux/sidebar.md)
+    - [安装nVidia套件和tensorflow环境](././系统/Linux/安装nVidia套件和tensorflow环境.md)
+    - [局域网无网络服务器联网解决方案](././系统/Linux/局域网无网络服务器联网解决方案.md)
+  - 云服务器
+    - [Hexo](././系统/云服务器/Hexo.md)
+    - [Hexo部署到阿里云](././系统/云服务器/Hexo部署到阿里云.md)
+    - [Hugo迁移到Hexo](././系统/云服务器/Hugo迁移到Hexo.md)
+    - [docsify文档](././系统/云服务器/docsify文档.md)
+    - [疫情监控](././系统/云服务器/疫情监控.md)
+    - [图床问题完美解决方案](././系统/云服务器/图床问题完美解决方案.md)
+    - [静态托管网站的最佳解决方案](././系统/云服务器/静态托管网站的最佳解决方案.md)
+  - 软件和硬件
+    - [DINEOF](././系统/软件和硬件/DINEOF.md)
+    - [Matlab也可以爬虫，青岛机场航班信息获取](././系统/软件和硬件/Matlab也可以爬虫，青岛机场航班信息获取.md)
+    - [V2ray](././系统/软件和硬件/V2ray.md)
+    - [声卡](././系统/软件和硬件/声卡.md)
+    - [网卡](././系统/软件和硬件/网卡.md)
+    - [装机](././系统/软件和硬件/装机.md)
+    - [使用LateX写论文](././系统/软件和硬件/使用LateX写论文.md)
+    - [利用Obsidian构建知识体系](././系统/软件和硬件/利用Obsidian构建知识体系.md)
+    - [效率神器--Alfred](././系统/软件和硬件/效率神器--Alfred.md)
+    - [效率软件分享](././系统/软件和硬件/效率软件分享.md)
+- 草稿
+  - MyBatis
+    - [MyBatis](././草稿/MyBatis/MyBatis.md)
+  - Spring
+    - [SpringIOC](././草稿/Spring/SpringIOC.md)
+  - SpringBoot
+    - [1. Spring5 零配置开发](././草稿/SpringBoot/1.%20Spring5%20零配置开发.md)
+    - [2. springboot入门以及核心配置](././草稿/SpringBoot/2.%20springboot入门以及核心配置.md)
+    - [3. 视图集成](././草稿/SpringBoot/3.%20视图集成.md)
+    - [4. 打包](././草稿/SpringBoot/4.%20打包.md)
+    - [5. SpringBoot&MyBatis](././草稿/SpringBoot/5.%20SpringBoot&MyBatis.md)
+  - SpringMVC
+    - [介绍](././草稿/SpringMVC/介绍.md)
+  - [VuePress](././草稿/VuePress.md)
+  - Web
+    - [1. JavaWeb概述](././草稿/Web/1.%20JavaWeb概述.md)
+    - [2. JavaWeb基础](././草稿/Web/2.%20JavaWeb基础.md)
+    - [5.BootStrap](././草稿/Web/5.BootStrap.md)
+    - [SSM](././草稿/Web/SSM.md)
   - 个人博客
-    - [1.需求设计](././项目/个人博客/1.需求设计)
-    - [1.需求设计](././项目/个人博客/1.需求设计.md)
-    - [2. SpringBoot整合Mybatis分页插件](././项目/个人博客/2.%20SpringBoot整合Mybatis分页插件.md)
-  - 疫情可视化
-    - [疫情监控](././项目/疫情可视化/疫情监控.md)
-  - [图床问题完美解决方案 (1)](././项目/图床问题完美解决方案%20(1).md)
-  - [静态托管网站的最佳解决方案](././项目/静态托管网站的最佳解决方案.md)
-- 软件和硬件
-  - [DINEOF](././软件和硬件/DINEOF.md)
-  - [Matlab也可以爬虫，青岛机场航班信息获取](././软件和硬件/Matlab也可以爬虫，青岛机场航班信息获取.md)
-  - [V2ray](././软件和硬件/V2ray.md)
-  - [声卡](././软件和硬件/声卡.md)
-  - [网卡](././软件和硬件/网卡.md)
-  - [装机](././软件和硬件/装机.md)
-  - [使用LateX写论文](././软件和硬件/使用LateX写论文.md)
-  - [[效率神器--Alfred]]
+    - [1.需求设计](././草稿/个人博客/1.需求设计)
+    - [1.需求设计](././草稿/个人博客/1.需求设计.md)
+    - [2. SpringBoot整合Mybatis分页插件](././草稿/个人博客/2.%20SpringBoot整合Mybatis分页插件.md)
+  - 网络编程
+    - [网络编程](././草稿/网络编程/网络编程.md)
+
+- 编程语言
+  - Java
+    - [1. Java基础语法](././编程语言/Java/1.%20Java基础语法.md)
+    - [2. 面向对象](././编程语言/Java/2.%20面向对象.md)
+    - [3. 封装 继承 多态](././编程语言/Java/3.%20封装%20继承%20多态.md)
+    - [4. Java常用API](././编程语言/Java/4.%20Java常用API.md)
+    - [5. 异常处理](././编程语言/Java/5.%20异常处理.md)
+    - [6. 注解和反射](././编程语言/Java/6.%20注解和反射.md)
+    - [7. 集合框架和泛型](././编程语言/Java/7.%20集合框架和泛型.md)
+    - [8. 网络编程](././编程语言/Java/8.%20网络编程.md)
+    - [JVM](././编程语言/Java/JVM.md)
+    - [JavaSE.xmind](././编程语言/Java/JavaSE.xmind)
+    - [README](././编程语言/Java/README.md)
+    - [算法学习路线](././编程语言/Java/算法学习路线.md)
+  - Python
+    - [Matplotlib常用布局-代码仓库](././编程语言/Python/Matplotlib常用布局-代码仓库.md)
+    - [Python 多线程](././编程语言/Python/Python%20多线程.md)
+    - [Python 多进程](././编程语言/Python/Python%20多进程.md)
+    - [Python进阶操作](././编程语言/Python/Python进阶操作.md)
+    - [pands 最大连续列](././编程语言/Python/pands%20最大连续列.md)
+    - [python 调用命令行参数](././编程语言/Python/python%20调用命令行参数.md)
+    - [协程 asyncio & 异步](././编程语言/Python/协程%20asyncio%20&%20异步.md)
+    - [多线程多进程](././编程语言/Python/多线程多进程.md)
+    - [迭代器，生成器](././编程语言/Python/迭代器，生成器.md)
+  - 数据结构与算法
+    - [01动态数组ArrayList](././编程语言/数据结构与算法/01动态数组ArrayList.md)
+    - [02链表LinkedList](././编程语言/数据结构与算法/02链表LinkedList.md)
+    - [Python数据结构](././编程语言/数据结构与算法/Python数据结构.md)
+    - [剑值offer](././编程语言/数据结构与算法/剑值offer.md)
