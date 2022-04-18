@@ -55,7 +55,7 @@ PyTorch与Tensorflow相比还有一个较大的优点就是安装简单，特别
 
 进入官网，选择你的下载方式和系统版本等信息，PyTorch会自动生成下载命令。
 
-![image-20220410214634910](http://pic.angyi.online/uPic/2022-04/image-20220410214634910.png)
+![image-20220410214634910](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/uPic/2022-04/image-20220410214634910.png)
 
 
 这里记录一下Ubuntu系统下pyenv的torch虚拟环境创建和安装

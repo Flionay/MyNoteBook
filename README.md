@@ -3,7 +3,7 @@
 
 ## 欢迎来到我的知识库
 ---
-<img class="content_my" src="http://pic.angyi.online/uPic/2022-04/2yW78X.png">
+<img class="content_my" src="https://pic-1300286858.cos.ap-nanjing.myqcloud.com/uPic/2022-04/2yW78X.png">
 
 
 ## 关于我

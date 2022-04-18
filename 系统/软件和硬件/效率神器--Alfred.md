@@ -1,5 +1,5 @@
 # Alfred
-![gE4wPH](http://pic.angyi.online/uPic/2022-04/gE4wPH.png)
+![gE4wPH](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/uPic/2022-04/gE4wPH.png)
 
 在Mac生态系统中，有一款著名的软件你不得不知，那就是Mac下大名鼎鼎的效率神器---Alfred。
 
@@ -7,7 +7,7 @@
 
 ## 1. 快速打开应用
 打开设置，设置快捷键即可快速唤出Alfred，这里可以选择关闭系统自带的Spotlight，然后将`command+空格`设置为alfred的快捷键。
-![](http://pic.angyi.online/picgo/202204111251573.png)
+![](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/picgo/202204111251573.png)
 
 
 ## 2. 快速打开文件
@@ -17,7 +17,7 @@
 这是Alfred最突出的功能，也是可玩性和定制性最高的功能。正是因为有它的加持，使得Alfred如虎添翼。
 WorkFLow能够简单的快捷键，执行自定义脚本工作流。
 比如：vscode打开当前路径，iterm打开当前路径，快捷翻译，快捷搜索等等....
-![l6iOUu](http://pic.angyi.online/uPic/2022-04/l6iOUu.png)
+![l6iOUu](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/uPic/2022-04/l6iOUu.png)
 
 
 ## 4. snippets 
@@ -43,10 +43,10 @@ WorkFLow能够简单的快捷键，执行自定义脚本工作流。
 ## 5. 剪切板历史记录
 配置好Clipboard History的快捷键，即可快速唤出剪切板历史。
 
-![](http://pic.angyi.online/picgo/202204111255218.png)
+![](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/picgo/202204111255218.png)
 
 
 选中需要的内容，回车即可再次粘贴。
 
 
-![](http://pic.angyi.online/picgo/202204111257189.png)
+![](https://pic-1300286858.cos.ap-nanjing.myqcloud.com/picgo/202204111257189.png)
