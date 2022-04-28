@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "项目/docsify文档.md",
-            "mode": "source",
+            "file": "编程语言/C++/C++基础入门.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "项目/docsify文档.md",
+                "file": "编程语言/C++/C++基础入门.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "项目/docsify文档.md"
+                "file": "编程语言/C++/C++基础入门.md"
               }
             }
           }
@@ -103,19 +103,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5
+    "width": 209.5
   },
   "active": "0476802ac94ab4bd",
   "lastOpenFiles": [
+    "编程语言/C++/C++基础入门.md",
+    "人工智能/数据处理/Xarray 进阶.md",
+    "人工智能/数据处理/数据处理与特征工程.md",
+    "人工智能/数据处理/CMIP6数据下载.md",
+    "人工智能/数据处理/常用下载数据方式.md",
     "项目/docsify文档.md",
     "_sidebar.md",
     "算法/深度学习/基于VOC数据集的Pytorch语义分割任务代码流程.md",
     "算法/深度学习/车流场景识别.md",
-    "算法/深度学习/【PyTorch】1. 为什么要学PyTorch.md",
-    "算法/深度学习/【PyTorch】2. 低阶api .md",
-    "算法/深度学习/榜样的力量-吴恩达采访人工智能大师实录.md",
-    "项目/静态托管网站的最佳解决方案.md",
-    "项目/图床问题完美解决方案 (1).md",
-    "算法/深度学习/Fcn-DeepLab-Unet语义分割效果.md"
+    "算法/深度学习/【PyTorch】1. 为什么要学PyTorch.md"
   ]
 }
